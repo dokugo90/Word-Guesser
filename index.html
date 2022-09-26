@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Guesser</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <h1>Guess the Word</h1>
+        <select id="select">
+            <option>Level: 1</option>
+            <option>Level: 2</option>
+            <option>Level: 3</option>
+        </select>
+    </nav>
+    <div class="settings">
+    <p class="hint"></p>
+    <p class="word-len"></p>
+    </div>
+    <div class="wrap">
+        <div class="user-body">
+            <h2 class="score">Score: 0</h2>
+            <div class="settings">
+                <p class="hint"></p>
+                <p class="word-len"></p>
+                </div>
+        <div class="inputPos">
+        <input type="text" id="text" placeholder="Guess"><br>
+        </div>
+        <div class="submit">
+        <button class="btn" type="button">Enter</button>
+        </div>
+        <h3 class="rank"></h3>
+        </div>
+        </div>
+        <div class="popup">
+            <div class="flex-wrap">
+            <h1 class="result"></h1>
+            <button class="resultBtn">Next Word</button>
+        </div>
+        </div>
+        <details id="wrongs">
+            <summary>View Wrong Guesses</summary>
+                <button class="clear">Clear All</button>
+        </details>
+</body>
+</html>

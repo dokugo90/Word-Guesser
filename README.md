@@ -1,1 +1,2 @@
 # Word-Guesser
+This project was made so I could get better at objects and classes. I am going to implement a lot more words later on and also improve the GUI of the website. Note! The site is not fully responsive yet and I will be working on that soon.

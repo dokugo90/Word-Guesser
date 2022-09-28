@@ -85,7 +85,7 @@ const WordListThree = [
         word: "gravity",
         hint: "You cannot see me but I can move you"
     }
-]
+]    
 
 class History {
     constructor(word) {
@@ -118,12 +118,9 @@ let savedHistory = JSON.parse(localStorage.getItem("savedHistory")) || [];
     }
  }
 
-function gameHints(e, n) {
+function gameHints(e, n = '') {
     hintText.textContent = `Hint: ${e}`
     wordText.textContent = `Length: ${n}`
-    if (n === undefined) {
-        wordText.textContent = ''
-    }
 }
 
 function Validate() {
